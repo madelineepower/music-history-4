@@ -1,0 +1,22 @@
+[
+    {
+      "name": "Let it Go",
+      "artist": "Idina Menzel",
+      "album": "Frozen"
+    },
+    {
+      "name": "Dancing in the Dark",
+      "artist": "Rihanna",
+      "album": "Home"
+    },
+    {
+      "name": "The Galaxy Song",
+      "artist": "Monty Python",
+      "album": "The Meaning of Life"
+    },
+    {
+      "name": "Code Monkey",
+      "artist": "Jonathon Coulton",
+      "album": "Untitled"
+    }
+  ]

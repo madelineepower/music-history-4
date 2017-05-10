@@ -53,6 +53,22 @@ $('#addButton').click(function(event) {
      document.getElementById("album-input").value = "";
 })
 
+$("#moreBtn").click(function(event) {
+   let moreSongs = (songs) => {
+      for (var i = 0; i < songs.length; i++) {
+        $("#song-names").append(`<section class="song-result">
+                      <h2>${songs[i].name} </h2>
+                      <p>${songs[i].artist} |</p>
+                      <p>${songs[i].album} </p>
+                      <button class="deleteBtn">Delete Song</button>
+                    </section>`);
+      }
+}
+  $.ajax({
+  	url:"moresongs.json"
+  }).done(moreSongs);
+})
+
 $.ajax({
 	url:"songs.json"
 }).done(showSongs);
